@@ -4,7 +4,7 @@ import { HashRouter as Router, Routes, Route, } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react'
 import Dashboard from './Components/Dashboard/Dashboard';
 function App() {
-  const { isAuthenticated, isLoading, error } = useAuth0();
+  const { isAuthenticated, isLoading } = useAuth0();
   if (isLoading) {
     return (
       <>
